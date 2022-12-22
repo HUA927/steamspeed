@@ -1,0 +1,216 @@
+https://steamcommunity.com:10379, www.steamcommunity.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host steamcommunity.com
+    #insecure_skip_verify
+    }
+}
+
+#http://:{8port0} {
+#redir / https://{host}{uri} 302
+#}
+
+
+https://store.steampowered.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host store.steampowered.com
+    #insecure_skip_verify
+    }
+}
+
+https://api.steampowered.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host api.steampowered.com
+    #insecure_skip_verify
+    }
+}
+
+https://gist.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghgist.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://api.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghapi.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://github.com:10379 https://www.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://gh.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://raw.githubusercontent.com:10379 https://raw.github.com:10379 https://camo.githubusercontent.com:10379 https://cloud.githubusercontent.com:10379 https://avatars.githubusercontent.com:10379 https://avatars0.githubusercontent.com:10379 https://avatars1.githubusercontent.com:10379 https://avatars2.githubusercontent.com:10379 https://avatars3.githubusercontent.com:10379 https://user-images.githubusercontent.com:10379 https://github-releases.githubusercontent.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghraw.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://assets-cdn.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghassets.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://github.githubassets.com:10379 https://help.github.com:10379 https://docs.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://gh154.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://codeload.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghcload.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+
+https://*.github.io:10379 https://www.github.io:10379 https://github.io:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghio.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://pages.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghps.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://services.github.com:10379 https://resources.github.com:10379 https://developer.github.com:10379 https://partner.github.com:10379 https://desktop.github.com:10379 https://guides.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghps.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://support.github.com:10379 https://education.github.com:10379 https://enterprise.github.com:10379 https://lab.github.com:10379 https://classroom.github.com:10379 https://central.github.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://gh140.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
+https://desktop.githubusercontent.com:10379 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    proxy / https://ghdesk.steam302.xyz {
+    policy random
+    fail_timeout 5s
+    timeout 30s
+    transparent
+    header_upstream Host {host}
+    insecure_skip_verify
+    }
+}
+
